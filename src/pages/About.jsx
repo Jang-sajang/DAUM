@@ -6,28 +6,28 @@ const About = () => {
     const philosophy = [
         {
             letter: 'D',
-            name: 'Discover (발견)',
+            name: 'Discover(발견)',
             desc: '청년들 각자가 가진 고유한 색깔과 잠재된 강점을 객관적으로 발견합니다.',
             icon: Eye,
             gradient: 'from-blue-500 to-cyan-400'
         },
         {
             letter: 'A',
-            name: 'Accept (수용)',
+            name: 'Accept(수용)',
             desc: '타인의 시선이 아닌, 있는 그대로의 나를 긍정하고 사랑하는 마음을 기릅니다.',
             icon: Heart,
             gradient: 'from-pink-500 to-rose-400'
         },
         {
             letter: 'U',
-            name: 'Understand (이해)',
+            name: 'Understand(이해)',
             desc: '내가 진정으로 원하는 것이 무엇인지 깊이 있게 이해하고 정리합니다.',
             icon: Target,
             gradient: 'from-indigo-500 to-purple-400'
         },
         {
             letter: 'M',
-            name: 'Move (나아감)',
+            name: 'Move(나아감)',
             desc: '나다움을 바탕으로 세상 속에 당당히 나아가는 구체적인 발걸음을 뗍니다.',
             icon: MoveRight,
             gradient: 'from-emerald-500 to-teal-400'
@@ -62,12 +62,11 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <span className="text-primary-600 font-bold tracking-widest text-xs uppercase mb-4 block">Our Identity</span>
-                        <h1 className="text-4xl lg:text-5xl font-bold text-secondary-900 mb-6 leading-tight">
+                        <h1 className="text-4xl lg:text-5xl font-bold text-secondary-900 mb-6 leading-tight text-balance">
                             청년들이 <span className="text-gradient">나다움</span>을 찾아가는 여정, 다움
                         </h1>
-                        <p className="text-lg lg:text-xl text-secondary-600 leading-relaxed max-w-3xl">
-                            '다움'은 정해진 답을 강요하지 않습니다. 우리는 청년들이 사회가 정한 기준이 아닌,
-                            자신만의 고유한 빛을 발견하고 그 가치를 실현해나갈 수 있도록 함께 고민하는 청년 지원 커뮤니티입니다.
+                        <p className="text-lg lg:text-xl text-secondary-600 leading-relaxed max-w-4xl text-pretty">
+                            '다움'은 정해진 답을 강요하지 않습니다. 우리는 청년들이 사회가 정한 기준이 아닌 자신만의 고유한 빛을 발견하고 그 가치를 실현해나갈 수 있도록 함께 고민하는 청년 지원 커뮤니티입니다.
                         </p>
                     </motion.div>
                 </div>
@@ -86,9 +85,8 @@ const About = () => {
                                 <Sparkles className="w-4 h-4" />
                                 Our Story
                             </div>
-                            <h2 className="text-4xl font-bold text-secondary-1000 leading-tight">
-                                청년들의 고민에서<br />
-                                시작된 <span className="text-primary-600">진심</span>
+                            <h2 className="text-4xl font-bold text-secondary-1000 leading-tight text-balance">
+                                청년들의 고민에서 시작된 <span className="text-primary-600">진심</span>
                             </h2>
                             <div className="space-y-6 text-secondary-600 text-lg leading-relaxed">
                                 <p>
@@ -149,10 +147,9 @@ const About = () => {
                         >
                             D.A.U.M Philosophy
                         </motion.span>
-                        <h2 className="text-4xl font-bold text-secondary-900 mb-6">'나다움'을 완성하는 4가지 단계</h2>
-                        <p className="text-secondary-600">
-                            우리는 단순한 스펙 쌓기가 아닌, 내면의 성장을 통해<br />
-                            흔들리지 않는 당신만의 가치를 세우는 과정을 함께합니다.
+                        <h2 className="text-4xl font-bold text-secondary-900 mb-6 text-balance">'나다움'을 완성하는 4가지 단계</h2>
+                        <p className="text-secondary-600 text-pretty">
+                            우리는 단순한 스펙 쌓기가 아닌, 내면의 성장을 통해 흔들리지 않는 당신만의 가치를 세우는 과정을 함께합니다.
                         </p>
                     </div>
 
@@ -194,9 +191,8 @@ const About = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         className="max-w-3xl mx-auto"
                     >
-                        <h2 className="text-4xl lg:text-5xl font-bold mb-10 leading-tight">
-                            청년 모두가 자신의 삶에서<br />
-                            <span className="text-primary-400">주인공</span>이 되는 세상
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-10 leading-tight text-balance">
+                            청년 모두가 자신의 삶에서 <span className="text-primary-400">주인공</span>이 되는 세상
                         </h2>
                         <p className="text-xl text-secondary-400 leading-relaxed mb-12">
                             '다움'이 꿈꾸는 내일은 멀리 있지 않습니다.

@@ -187,7 +187,11 @@ const Contact = () => {
                                                 required
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                placeholder="상담받고 싶은 내용이나 궁금한 점을 적어주세요"
+                                                placeholder={[
+                                                    "상담받고 싶은 내용이나 궁금한 점을 적어주세요", ,
+                                                    "내용 :",
+                                                    "전화번호 :"
+                                                ].join('\n')}
                                                 className="w-full bg-secondary-50 border border-secondary-100 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-400/20 focus:border-primary-400 transition-all outline-none resize-none"
                                             ></textarea>
                                         </div>

@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply antialiased text-secondary-900 bg-[#f8fafc];
+    @apply antialiased text-secondary-900 bg-[#f8fafc] break-keep text-pretty;
   }
 }
 

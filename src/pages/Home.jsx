@@ -78,13 +78,11 @@ const Home = () => {
                         >
                             Specialized Solutions
                         </motion.span>
-                        <h2 className="text-4xl lg:text-5xl font-bold text-secondary-900 mb-6 leading-tight">
-                            당신의 삶을 변화시키는<br />
-                            <span className="text-gradient">네 가지 핵심 가이드</span>
+                        <h2 className="text-4xl lg:text-5xl font-bold text-secondary-900 mb-6 leading-tight text-balance">
+                            당신의 삶을 변화시키는 <span className="text-gradient">네 가지 핵심 가이드</span>
                         </h2>
-                        <p className="text-xl text-secondary-600">
-                            DAUM은 단순한 조언을 넘어, 구체적인 데이터와 따뜻한 공감을 통해<br />
-                            당신만의 정답을 찾아가는 길을 함께 걷습니다.
+                        <p className="text-xl text-secondary-600 text-pretty">
+                            DAUM은 단순한 조언을 넘어, 구체적인 데이터와 따뜻한 공감을 통해 당신만의 정답을 찾아가는 길을 함께 걷습니다.
                         </p>
                     </div>
 
@@ -124,7 +122,7 @@ const Home = () => {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h2 className="text-4xl lg:text-5xl font-bold mb-10 leading-tight">
+                            <h2 className="text-4xl lg:text-5xl font-bold mb-10 leading-tight text-balance">
                                 왜 <span className="text-primary-400">DAUM</span>인가요?
                             </h2>
                             <div className="space-y-6">
@@ -183,9 +181,9 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {[
-                            { title: "2024 진로 박람회", date: "2024.12.15 - 12.17", desc: "다양한 직업군의 전문가들과 만나는 특별한 기회" },
-                            { title: "멘토링 워크샵", date: "2024.12.20", desc: "현직 전문가와 함께하는 1:1 멘토링 프로그램" },
-                            { title: "온라인 특강", date: "2024.12.28", desc: "성공적인 커리어 전환을 위한 실전 노하우" }
+                            { title: "2026 추구미 챌린지!", date: "2026.2.27 - 2.28", desc: "원데이클래스와 나의 내면의 추구미찾기", image: "/images/72b4d9420b13aa670f58dc58c91f3e6e.jpg" },
+                            { title: "멘토링 워크샵", date: "2025.12.20", desc: "현직 전문가와 함께하는 1:1 멘토링 프로그램", image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=800" },
+                            { title: "온라인 특강", date: "2025.12.28", desc: "성공적인 커리어 전환을 위한 실전 노하우", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800" }
                         ].map((event, i) => (
                             <motion.div
                                 key={i}
@@ -196,7 +194,11 @@ const Home = () => {
                             >
                                 <div className="aspect-[16/10] bg-secondary-100 rounded-3xl mb-6 overflow-hidden relative">
                                     <div className="absolute inset-0 bg-primary-600/0 group-hover:bg-primary-600/10 transition-colors duration-500" />
-                                    <div className="w-full h-full flex items-center justify-center text-secondary-300 font-medium">Image Placeholder</div>
+                                    <img
+                                        src={event.image}
+                                        alt={event.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    />
                                 </div>
                                 <h3 className="text-2xl font-bold text-secondary-900 mb-2 group-hover:text-primary-600 transition-colors">{event.title}</h3>
                                 <p className="text-sm text-primary-600 font-medium mb-3">{event.date}</p>
@@ -220,13 +222,11 @@ const Home = () => {
                         <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
 
                         <div className="relative z-10">
-                            <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-                                당신에게 가장 필요한<br className="hidden md:block" />
-                                <span className="text-primary-400">DAUM</span>은 무엇인가요?
+                            <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight text-balance">
+                                당신에게 가장 필요한 <span className="text-primary-400">DAUM</span>은 무엇인가요?
                             </h2>
-                            <p className="text-xl text-secondary-300 mb-12 max-w-2xl mx-auto opacity-90 leading-relaxed">
-                                지금, 변화를 꿈꾼다면 DAUM과 상담하세요.<br />
-                                당신의 가능성을 현실로 만들어 드립니다.
+                            <p className="text-xl text-secondary-300 mb-12 max-w-2xl mx-auto opacity-90 leading-relaxed text-pretty">
+                                지금, 변화를 꿈꾼다면 DAUM과 상담하세요. 당신의 가능성을 현실로 만들어 드립니다.
                             </p>
                             <div className="flex flex-wrap justify-center gap-6">
                                 <Link to="/contact">
