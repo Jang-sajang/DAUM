@@ -55,7 +55,7 @@ const HeroSlider = () => {
                     <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform translate-x-20" />
                     <div className="absolute bottom-0 left-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl" />
 
-                    <div className="container mx-auto px-4 relative z-10">
+                    <div className="container mx-auto px-4 lg:px-24 relative z-10">
                         <motion.div
                             initial={{ y: 30, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
@@ -104,13 +104,13 @@ const HeroSlider = () => {
             {/* Arrows */}
             <button
                 onClick={prevSlide}
-                className="absolute left-6 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all backdrop-blur-sm hidden lg:block"
+                className="absolute left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all backdrop-blur-sm hidden lg:block"
             >
                 <ChevronLeft className="w-6 h-6" />
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-6 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all backdrop-blur-sm hidden lg:block"
+                className="absolute right-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all backdrop-blur-sm hidden lg:block"
             >
                 <ChevronRight className="w-6 h-6" />
             </button>

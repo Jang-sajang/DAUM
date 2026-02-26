@@ -41,13 +41,16 @@ const Footer = () => {
                         <h3 className="text-sm font-semibold text-secondary-900 tracking-wider uppercase">Contact</h3>
                         <ul className="mt-4 space-y-4">
                             <li className="text-base text-secondary-500">
-                                Email: contact@daum-consulting.com
+                                Email: nadaum54.company@gmail.com
                             </li>
                             <li className="text-base text-secondary-500">
-                                Tel: 02-1234-5678
+                                Tel: 010-4145-7507
                             </li>
                             <li className="text-base text-secondary-500">
-                                Seoul, Korea
+                                사업자번호: 607-28-17515
+                            </li>
+                            <li className="text-base text-secondary-500">
+                                Daegu, Korea
                             </li>
                         </ul>
                     </div>

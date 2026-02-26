@@ -170,9 +170,9 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {[
-                            { title: "2026 추구미 챌린지!", date: "2026.3.5 - 3.6", desc: "원데이클래스와 나의 내면의 추구미찾기", image: "/images/72b4d9420b13aa670f58dc58c91f3e6e.jpg" },
-                            { title: "멘토링 워크샵", date: "2026.1.20", desc: "현직 전문가와 함께하는 멘토링 프로그램", image: "/images/lectureEx.png" },
-                            { title: "온라인 특강", date: "2025.12.28", desc: "성공적인 커리어 전환을 위한 실전 노하우", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800" }
+                            { title: "나다움 취업 특강", date: "2026.02.25", desc: "DAUM이 제안하는 취업을 향한 첫걸음, 면접 특강과 함께 변화를 시작해 보세요.", image: "/images/행사이미지1.png" },
+                            { title: "1:1 집중 멘토링", date: "2026.01.15", desc: "전문 상담사와 함께 나의 강점과 가치를 발견하고, 맞춤형 커리어 로드맵을 설계합니다.", image: "/images/행사이미지2.png" },
+                            { title: "인사이트 플래닝", date: "2025.12.20", desc: "복잡한 생각들을 정리하고 구체적인 액션 플랜을 세우는 시간, 성장을 위한 기록을 시작합니다.", image: "/images/행사이미지3.png" }
                         ].map((event, i) => (
                             <motion.div
                                 key={i}

@@ -69,9 +69,10 @@ const Contact = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-6xl mx-auto">
                     <div className="lg:col-span-4 space-y-4">
                         {[
-                            { icon: Mail, label: "이메일", value: "contact@daum-consulting.com", color: "text-blue-500" },
-                            { icon: Phone, label: "전화번호", value: "02-1234-5678", color: "text-indigo-500" },
-                            { icon: MapPin, label: "찾아오시는 길", value: "서울특별시 강남구 테헤란로 123 DAUM 빌딩 4층", color: "text-purple-500" },
+                            { icon: Mail, label: "이메일", value: "nadaum54.company@gmail.com", color: "text-blue-500" },
+                            { icon: Phone, label: "전화번호", value: "010-4145-7507", color: "text-indigo-500" },
+                            { icon: CheckCircle2, label: "사업자번호", value: "607-28-17515", color: "text-primary-500" },
+                            { icon: MapPin, label: "찾아오시는 길", value: "대구광역시 남구 안지랑로 21길", color: "text-purple-500" },
                         ].map((info, idx) => (
                             <motion.div
                                 key={idx}
@@ -160,7 +161,7 @@ const Contact = () => {
                                                     required
                                                     value={formData.user_email}
                                                     onChange={handleChange}
-                                                    placeholder="example@email.com"
+                                                    placeholder="이메일을 입력해주세요"
                                                     className="w-full bg-secondary-50 border border-secondary-100 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-400/20 focus:border-primary-400 transition-all outline-none"
                                                 />
                                             </div>
