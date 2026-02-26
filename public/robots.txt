@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daum-homepage.vercel.app/sitemap.xml
+Sitemap: https://daum-one.vercel.app/sitemap.xml
