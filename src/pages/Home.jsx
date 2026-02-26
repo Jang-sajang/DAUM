@@ -19,8 +19,8 @@ const Home = () => {
             color: 'bg-indigo-500'
         },
         {
-            name: '성향 분석',
-            description: 'MBTI, 에니어그램 등 검증된 도구를 통해 나를 깊이 있게 이해합니다.',
+            name: '자아 발견',
+            description: '남들의 시선이나 사회적 기준이 아닌, 내가 진짜 원하는 것을 찾아 흔들리지 않는 삶의 기준을 만듭니다.',
             icon: Heart,
             color: 'bg-purple-500'
         },
@@ -55,17 +55,6 @@ const Home = () => {
         <div className="bg-[#f8fafc]">
             {/* Hero Section - Slider */}
             <HeroSlider />
-
-            {/* Trusted By / Statistics */}
-            <section className="py-12 bg-white border-b border-secondary-100">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap justify-center gap-12 lg:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                        <div className="flex items-center gap-2"><span className="text-2xl font-bold text-secondary-900">1,000+</span> <span className="text-sm">성공 사례</span></div>
-                        <div className="flex items-center gap-2"><span className="text-2xl font-bold text-secondary-900">98%</span> <span className="text-sm">고객 만족도</span></div>
-                        <div className="flex items-center gap-2"><span className="text-2xl font-bold text-secondary-900">12년</span> <span className="text-sm">전문 경력</span></div>
-                    </div>
-                </div>
-            </section>
 
             {/* Features Section */}
             <section className="section-padding">
@@ -181,8 +170,8 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {[
-                            { title: "2026 추구미 챌린지!", date: "2026.2.27 - 2.28", desc: "원데이클래스와 나의 내면의 추구미찾기", image: "/images/72b4d9420b13aa670f58dc58c91f3e6e.jpg" },
-                            { title: "멘토링 워크샵", date: "2025.12.20", desc: "현직 전문가와 함께하는 1:1 멘토링 프로그램", image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=800" },
+                            { title: "2026 추구미 챌린지!", date: "2026.3.5 - 3.6", desc: "원데이클래스와 나의 내면의 추구미찾기", image: "/images/72b4d9420b13aa670f58dc58c91f3e6e.jpg" },
+                            { title: "멘토링 워크샵", date: "2026.1.20", desc: "현직 전문가와 함께하는 멘토링 프로그램", image: "/images/lectureEx.png" },
                             { title: "온라인 특강", date: "2025.12.28", desc: "성공적인 커리어 전환을 위한 실전 노하우", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800" }
                         ].map((event, i) => (
                             <motion.div

@@ -13,7 +13,7 @@ const slides = [
     },
     {
         id: 2,
-        title: "2025 진로 박람회\n사전 예약 접수 중",
+        title: "2026 진로 컨설팅\n사전 예약 접수 중",
         subtitle: "직무 전문가와 함께하는 1:1 멘토링과\n커리어 로드맵 설계를 경험하세요.",
         tag: "Event",
         bg: "bg-gradient-to-br from-blue-900 to-indigo-900"
@@ -35,7 +35,7 @@ const HeroSlider = () => {
             setCurrent((prev) => (prev + 1) % slides.length);
         }, 5000);
         return () => clearInterval(timer);
-    }, []);
+    }, [current]);
 
     const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
     const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
