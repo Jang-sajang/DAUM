@@ -21,8 +21,10 @@ const Header = () => {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center">
-                        <Link to="/" className="text-2xl font-bold text-primary-600 tracking-tighter">
-                            DAUM
+                        <Link to="/" className="flex items-center gap-2 group">
+                            <span className="text-2xl font-bold text-primary-600 tracking-tighter">
+                                DAUM
+                            </span>
                         </Link>
                     </div>
 

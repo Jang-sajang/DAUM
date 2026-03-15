@@ -7,8 +7,11 @@ const Footer = () => {
             <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-2">
-                        <Link to="/" className="text-2xl font-bold text-primary-600 tracking-tighter">
-                            DAUM
+                        <Link to="/" className="flex items-center gap-2">
+                            <img src="/logo.webp" alt="DAUM Logo" className="h-8 w-auto" />
+                            <span className="text-2xl font-bold text-primary-600 tracking-tighter">
+                                DAUM
+                            </span>
                         </Link>
                         <p className="mt-4 text-sm text-secondary-500 max-w-xs">
                             나를 찾아가는 여정, DAUM과 함께하세요. <br />
